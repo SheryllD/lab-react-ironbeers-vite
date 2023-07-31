@@ -1,9 +1,9 @@
 import "./App.css";
+import { Route, Routes } from 'react-router-dom' // I2: add the route
 import React, { useState } from "react"; //I2
 import HomePage from "./pages/HomePage"; //I2
-import { Route, Routes } from 'react-router-dom' // I2: add the route
 import AllBeersPage from "./pages/AllBeersPage"; 
-import RandomBeer from "./pages/RandomBeerPage";
+import RandomBeerPage from "./pages/RandomBeerPage";
 import AddBeerPage from "./pages/AddBeerPage"; 
 import BeerDetailsPage from "./pages/BeerDetailsPage"; 
 
@@ -17,10 +17,10 @@ function App () {
     <nav> 
     <Routes>
         <Route path="/" element= {<HomePage/>}  /> //I1
-        <Route path="/Allbeers" element= {<AllBeersPage/>}  /> //I1
-        <Route path="/add-beer" element= {<AddBeerPage/>}  /> 
-        <Route path="/random-beer" element= {<RandomBeerPage/>}  /> 
-        <Route path="/beers/:beerId" element= {<BeerDetailsPage/>}  /> 
+        <Route path="/beers" element= {<AllBeersPage/>}  /> //I1
+        <Route path="/new-beer" element= {<AddBeerPage/>}  /> //I1
+        <Route path="/random-beer" element= {<RandomBeerPage/>}  /> //I1
+        <Route path="/beers/:beerId" element= {<BeerDetailsPage/>}  /> //I1
         </Routes>
     </nav>
     </>
