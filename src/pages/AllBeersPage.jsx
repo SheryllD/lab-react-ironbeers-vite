@@ -29,7 +29,7 @@ return allBeers ? (
                 </div>
                 <div className="beer-information">
                   <h2>{beer.name}</h2>
-                  <h3>{beer.tagline}</h3>
+                  <h3>{beer.tagline}</h3>                  
                   <h5>Contributed by: {beer.contributed_by}</h5>
                 </div>
               </div>
